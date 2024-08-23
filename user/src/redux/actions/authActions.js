@@ -43,7 +43,7 @@ export const logIn = (email, password) => async dispatch => {
   try {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
-    
+
     dispatch({
       type: AUTH_SUCCESS,
       payload: {
@@ -73,7 +73,6 @@ export const logOut = () => async dispatch => {
   }
 };
 
-// Listen to authentication state changes and dispatch the relevant actions
 export const authStateChanged = () => dispatch => {
   onAuthStateChanged(auth, (user) => {
     if (user) {

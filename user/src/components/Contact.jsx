@@ -4,7 +4,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div className="container py-4">
+        <div className="container py-5">
             <div className="row">
                 <div className="col-md-6">
                     <h2>Contact Us</h2>

@@ -14,7 +14,7 @@ const teamMembers = [
 
 const About = () => {
     return (
-        <div className="container pt-4">
+        <div className="container pt-5">
             <div className="row">
                 <div className="col-lg-12 mb-4">
                     <h2 className="text-dark text-center">About Us</h2>

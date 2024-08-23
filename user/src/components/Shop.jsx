@@ -1,8 +1,10 @@
+// src/components/Shop.jsx
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { fetchProducts } from '../../../admin/src/redux/actions/addProductActions';
-import { addToCart, addToFavorites, createOrder } from '../redux/actions/cartActions';
+import { addToCart, addToFavorites } from '../redux/actions/cartActions';
+import { createOrder } from '../redux/actions/productsActions';
 
 function Shop() {
   const { category } = useParams();
@@ -78,19 +80,19 @@ function Shop() {
                       className="btn btn-warning btn-sm"
                       onClick={() => handleAddToCart(product)}
                     >
-                      <i className="bi bi-cart"></i> Add to Cart
+                      <i className="bi bi-cart"></i>
                     </button>
                     <button
                       className="btn btn-outline-danger btn-sm"
                       onClick={() => handleAddToFavorites(product)}
                     >
-                      <i className="bi bi-heart"></i> Favorite
+                      <i className="bi bi-heart"></i>
                     </button>
                     <button
                       className="btn btn-success btn-sm"
                       onClick={() => handleBuy(product)}
                     >
-                      <i className="bi bi-cart-check"></i> Buy
+                      <i className="bi bi-cart-check text-white"></i>
                     </button>
                   </div>
                 </div>

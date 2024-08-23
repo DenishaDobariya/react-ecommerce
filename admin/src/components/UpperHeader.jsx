@@ -18,7 +18,7 @@ function UpperHeader() {
       };
       fetchPhotoURL();
     } else if (user) {
-      setPhotoURL(user.photoURL); // Use the photoURL from the user object if available
+      setPhotoURL(user.photoURL); 
     }
   }, [user]);
 

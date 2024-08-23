@@ -34,7 +34,7 @@ body{
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  background-color: #f8f9fa; /* Light background color */
+  background-color: #f8f9fa; 
   padding: 0 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -42,7 +42,7 @@ body{
 .app-title {
   font-size: 24px;
   font-weight: bold;
-  color: #343a40; /* Dark color for the app title */
+  color: #343a40; 
 }
 
 .user-info {
@@ -66,7 +66,7 @@ body{
 .user-info-content {
   display: flex;
   flex-direction: column;
-  margin-right: 20px; /* Space between user details and logout button */
+  margin-right: 20px; 
 }
 
 .user-name {
@@ -84,7 +84,7 @@ body{
   /* padding: 8px 16px; */
   border: none;
   border-radius: 4px;
-  background-color: #dc3545; /* Bootstrap's danger color */
+  background-color: #dc3545; 
   color: white;
   cursor: pointer;
   font-size: 14px;
@@ -96,10 +96,182 @@ body{
 
 .login-link {
   font-size: 16px;
-  color: #007bff; /* Bootstrap's primary color */
+  color: #007bff;
   text-decoration: none;
 }
 
 .login-link:hover {
+  text-decoration: underline;
+}
+
+/* src/components/Login.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a67d8;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #434190;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.signup-link a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* src/components/Signup.css */
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f6f8;
+}
+
+.signup-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #5a67d8;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #434190;
+}
+
+.error-message {
+  color: #e53e3e;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.login-link a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
   text-decoration: underline;
 }

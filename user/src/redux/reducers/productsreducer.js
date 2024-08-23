@@ -1,9 +1,10 @@
 // productsReducer.js
-import { FETCH_PRODUCTS_SUCCESS, SEARCH_PRODUCTS } from '../actions/actionTypes';
+import { FETCH_PRODUCTS_SUCCESS, SEARCH_PRODUCTS, CREATE_ORDER } from '../actions/actionTypes';
 
 const initialState = {
   products: [],
   searchResults: [],
+  orders: JSON.parse(localStorage.getItem('orders')) || [],
 };
 
 const productsReducer = (state = initialState, action) => {
@@ -12,7 +13,7 @@ const productsReducer = (state = initialState, action) => {
       return {
         ...state,
         products: action.payload,
-        searchResults: action.payload, // Initialize search results
+        searchResults: action.payload, 
       };
     case SEARCH_PRODUCTS:
       return {
@@ -21,9 +22,15 @@ const productsReducer = (state = initialState, action) => {
           product.name.toLowerCase().includes(action.payload.toLowerCase())
         ),
       };
+    case CREATE_ORDER:
+      return {
+        ...state,
+        orders: [...state.orders, action.payload],
+      };
     default:
       return state;
   }
 };
 
 export default productsReducer;
+

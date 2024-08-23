@@ -37,7 +37,7 @@ const Cart = () => {
                   <td>{item.name}</td>
                   <td>{item.description}</td>
                   <td>${item.price}</td>
-                  <td>1</td> {/* Quantity is static; update based on your needs */}
+                  <td>1</td> 
                   <td>
                     <button
                       className="btn btn-danger"

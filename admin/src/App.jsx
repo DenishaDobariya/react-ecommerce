@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { checkAuthState } from './redux/actions/authActions'; // Import checkAuthState
+import { checkAuthState } from './redux/actions/authActions'; 
 
 import Dashboard from './components/Dashboard';
 import Sidebar from './components/Sidebar';
@@ -17,7 +17,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(checkAuthState()); // Check authentication state on app load
+    dispatch(checkAuthState()); 
   }, [dispatch]);
 
   return (
