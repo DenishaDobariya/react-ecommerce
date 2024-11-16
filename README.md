@@ -20,18 +20,21 @@ Ecommerce Website with Admin and User Panels
 
 # Steps to Run the Project
 1. Clone the Repository:
-git clone <repository-url>
-cd <project-folder>
+ 
+  - git clone https://github.com/DenishaDobariya/react-ecommerce.git
 
-2. Install Dependencies:
+    ```
+    cd react-ecommerce
+
+3. Install Dependencies:
     ```
     npm install
 
-3. Run the Development Server:
+4. Run the Development Server:
     ```
     npm run dev
 
-4. Access the Application:
+5. Access the Application:
   - Open your browser and visit http://localhost:5173 (or the port shown in the terminal).
 
 5. Build the Project for Production: If needed, build the project for deployment:
