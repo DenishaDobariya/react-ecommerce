@@ -26,16 +26,17 @@ Ecommerce Website with Admin and User Panels
     ```
     cd react-ecommerce
 
-3. Install Dependencies:
+2. Install Dependencies:
     ```
     npm install
 
-4. Run the Development Server:
+3. Run the Development Server:
     ```
     npm run dev
 
-5. Access the Application:
+4. Access the Application:
   - Open your browser and visit http://localhost:5173 (or the port shown in the terminal).
+
 
 5. Build the Project for Production: If needed, build the project for deployment:
    ```
@@ -43,3 +44,7 @@ Ecommerce Website with Admin and User Panels
 6. Preview the Production Build: To preview the built project locally:
     ```
     npm run preview
+
+
+  https://github.com/user-attachments/assets/763c5b45-c694-487a-902c-14ba2859d336
+
