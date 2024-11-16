@@ -5,7 +5,7 @@ Ecommerce Website with Admin and User Panels
 
 - Admin Panel: Allows administrators to manage products, including adding, editing, and deleting items.
 
-- User Panel: Displays the products dynamically, reflecting updates made by the admin in real-time...
+- User Panel: Displays the products dynamically, reflecting updates made by the admin in real-time.
 
 # Features
 - Admin CRUD operations for products
